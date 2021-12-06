@@ -1,0 +1,5 @@
+1.- Es posible que tengas que añadir como .jar el archivo fontawesomefx-fontawesome-4.7.0-9.1.2
+
+2.- He creado un pequeño programa dentro del paquete pruebas para crear alumnos con datos aleatorios.
+
+3.- Solo funcionan los botones de ver alumnos y añadir alumnos

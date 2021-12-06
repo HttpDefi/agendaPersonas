@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IMF.GestionAgendaAcesoDatos.verAlumnoController">
+   <children>
+      <TableView fx:id="tblTabla" layoutX="275.0" layoutY="14.0" onMouseClicked="#getDatos" prefHeight="576.0" prefWidth="626.0">
+        <columns>
+            <TableColumn fx:id="columnID" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="columnNombre" prefWidth="94.0" text="Nombre" />
+          <TableColumn fx:id="columnApellidos" prefWidth="140.0" text="Apellidos" />
+            <TableColumn fx:id="columnTelefono" minWidth="0.0" prefWidth="112.0" text="Teléfono" />
+            <TableColumn fx:id="columnDireccion" prefWidth="231.0" text="Dirección" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="249.0" fitWidth="200.0" layoutX="40.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/default.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/imf-logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtBuscar" layoutX="30.0" layoutY="39.0" prefHeight="34.0" prefWidth="200.0" promptText="Buscar alumno" styleClass="buscar" />
+      <TextField fx:id="txtNombre" layoutX="30.0" layoutY="351.0" prefHeight="22.0" prefWidth="200.0" styleClass="editarAlumno" text="Nombre">
+         <font>
+            <Font name="Arial Nova Cond" size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnEditar" layoutX="30.0" layoutY="476.0" mnemonicParsing="false" onAction="#editar" styleClass="btnEditar" text="Editar">
+         <graphic>
+            <FontAwesomeIconView glyphName="EDIT" size="20" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtApellidos" layoutX="30.0" layoutY="379.0" prefHeight="22.0" prefWidth="200.0" styleClass="editarAlumno" text="Apellidos">
+         <font>
+            <Font name="Arial Nova Cond" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTelefono" layoutX="30.0" layoutY="404.0" prefHeight="22.0" prefWidth="200.0" styleClass="editarAlumno" text="Telefono">
+         <font>
+            <Font name="Arial Nova Cond" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDireccion" layoutX="30.0" layoutY="428.0" prefHeight="22.0" prefWidth="200.0" styleClass="editarAlumno" text="Dirección">
+         <font>
+            <Font name="Arial Nova Cond" size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnBorrar" layoutX="130.0" layoutY="476.0" mnemonicParsing="false" onAction="#borrar" styleClass="btnBorrar" text="Borrar">
+         <graphic>
+            <FontAwesomeIconView glyphName="TRASH_ALT" size="20" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
